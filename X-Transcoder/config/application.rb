@@ -58,5 +58,9 @@ module XTranscoder
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
+
+    # Precompile additional assets (application.js, application.css, and all non-JS/CSS are already added)
+    #config.assets.precompile += %w( bootstrap-responsive-custom.css )
+    config.assets.precompile += %w(*.png *.jpg *.jpeg *.gif)
   end
 end
