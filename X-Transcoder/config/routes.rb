@@ -1,4 +1,6 @@
 XTranscoder::Application.routes.draw do
+  get "x_coder/new"
+
   resources :users
 
   root :to => 'static_pages#home'
