@@ -1,2 +1,22 @@
-<h1>XCoder#new</h1>
-<p>Find me in app/views/x_coder/new.html.erb</p>
+<% provide(:title, 'X-Coder') %>
+<h1>    Welcome to X-Coder! View X-Coder Status:</h1>
+
+<div class="row">
+  <div class="span6 offset3">
+    <%= form_for(@xcoder) do |f| %>
+
+      <%= f.label :stream %>
+      <br><%= f.text_field :stream %>
+
+      <br><%= f.label :format_in %>
+      <br><%= f.text_field :format_in %>
+
+      <br><%= f.label :format_out %>
+      <br><%= f.password_field :format_out %>
+
+      <br><%= f.label :user_id %>
+      <br><%= f.password_field :user_id %>
+
+    <% end %>
+  </div>
+</div>
