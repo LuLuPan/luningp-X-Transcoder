@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  stream: MyString
+  format: MyString
+  user_id: 
+
+two:
+  stream: MyString
+  format: MyString
+  user_id: 
