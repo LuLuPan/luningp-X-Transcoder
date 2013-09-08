@@ -3,7 +3,7 @@ class CreateXCoders < ActiveRecord::Migration
     create_table :x_coders do |t|
       t.string :stream
       t.string :format
-      t.ineger :user_id
+      t.integer :user_id
 
       t.timestamps
     end
