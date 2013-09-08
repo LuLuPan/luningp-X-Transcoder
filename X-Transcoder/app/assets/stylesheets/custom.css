@@ -1,4 +1,5 @@
 @import "bootstrap";
+$bodyBackground: #4845f0;
 /* universal */
 
 html {
@@ -32,16 +33,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 3em;
+  font-size: 2.5em;
   letter-spacing: -2px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   text-align: center;
 }
 
 h2 {
   font-size: 1.2em;
   letter-spacing: -1px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   text-align: center;
   font-weight: normal;
   color: #222;
@@ -52,40 +53,71 @@ p {
   line-height: 1.7em;
 }
 
-/* header */
-
+/* logo */
 #logo {
   float: left;
-  margin-right: 10px;
-  font-size: 1.5em;
-  color: #459;
+  margin-right: 5px;
+  font-size: 1.2em;
+  color: #23c;
   text-transform: uppercase;
   letter-spacing: -1px;
-  padding-top: 1px;
+  padding-top: 5px;
   font-weight: bold;
   line-height: 1;
 }
 
 #logo:hover {
-  color: #888;
+  color: #23c;
   text-decoration: none;
+}
+
+/* header */
+
+header {
+  margin-top: 5px;
+  margin-right: 45px;
+  padding-top: 5px;
+  border-top: 1px solid #eaeaea;
+  color: #23c;
+}
+
+header a {
+  color: #23c;
+}
+
+header a:hover {
+  color: #23c;
+}
+
+header small {
+  float: left;
+}
+
+header ul {
+  float: right;
+  list-style: none;
+}
+
+header ul li {
+  float: left;
+  margin-left: 10px;
 }
 
 /* footer */
 
 footer {
-  margin-top: 45px;
+  margin-top:  205px;
   padding-top: 5px;
   border-top: 1px solid #eaeaea;
-  color: #234;
+  color: #23c;
 }
 
 footer a {
-  color: #234;
+  color: #23c;
 }
 
 footer a:hover {
-  color: #234;
+  color: #23c;
 }
 
 footer small {
