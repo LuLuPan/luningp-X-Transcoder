@@ -4,17 +4,11 @@
     <section>
       <h1>
         <%= gravatar_for @user %>
+        Name:
         <%= @user.name %>
+        <br>mail:
+        <%= @user.email %>
       </h1>
     </section>
   </aside>
-  <div class="span8">
-    <% if @user.xcoder.any? %>
-      <h3>Microposts (<%= @user.xcoder.count %>)</h3>
-      <ol class="X_Coder">
-        <%= render @xcoder %>
-      </ol>
-      <%= will_paginate @xcoder %>
-    <% end %>
-  </div>
 </div>
