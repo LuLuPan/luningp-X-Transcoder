@@ -1,0 +1,7 @@
+<%= form_for(@xcoder) do |f| %>
+  
+  <div class="field">
+    <%= f.file_field :stream, placeholder: "Submit new Transcoding Stream..." %>
+  </div>
+  <%= f.submit "Upload", class: "btn btn-large btn-primary" %>
+<% end %>

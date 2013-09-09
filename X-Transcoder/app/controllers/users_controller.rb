@@ -16,6 +16,7 @@ class UsersController < ApplicationController
 
   def show
     @user = User.find(params[:id])
+    @x_coders = @user.x_coders.paginate(page: params[:page])
   end
 
   private

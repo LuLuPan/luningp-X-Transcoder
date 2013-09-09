@@ -11,4 +11,13 @@
       </h1>
     </section>
   </aside>
+  <div class="span8">
+    <% if @user.x_coders.any? %>
+      <h3>X_coder (<%= @user.x_coders.count %>)</h3>
+      <ol class="XCoder">
+        <%= render @x_coders %>
+      </ol>
+      <%= will_paginate @x_coders %>
+    <% end %>
+  </div>
 </div>

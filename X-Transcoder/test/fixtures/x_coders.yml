@@ -3,9 +3,9 @@
 one:
   stream: MyString
   format: MyString
-  user_id: 
+  user_id: 1
 
 two:
   stream: MyString
   format: MyString
-  user_id: 
+  user_id: 1

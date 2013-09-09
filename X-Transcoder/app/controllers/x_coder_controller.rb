@@ -8,7 +8,7 @@ class XCoderController < ApplicationController
   end
 
   def create
-  	@xcoder = current_user.xcoder.build(xcoder_params)
+  	@xcoder = current_user.x_coders.build(xcoder_params)
   	if @xcoder.save
   		flash[:success] = "Xcoder created!"
   		redirect_to root_url
@@ -19,4 +19,10 @@ class XCoderController < ApplicationController
 
   def destroy
   end
+
+  private
+
+    def xcoder_params
+      params.require(:xcoder).permit(:stream, :format)
+    end
 end

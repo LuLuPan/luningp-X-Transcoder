@@ -2,6 +2,7 @@ XTranscoder::Application.routes.draw do
   get "x_coder/new"
 
   resources :users
+  resources :x_coders
   resources :sessions, only: [:new, :create, :destroy]
 
   root :to => 'static_pages#home'
