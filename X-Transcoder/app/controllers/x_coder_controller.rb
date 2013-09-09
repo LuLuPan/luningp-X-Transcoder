@@ -20,6 +20,13 @@ class XCoderController < ApplicationController
   def destroy
   end
 
+  def upload
+    uploaded_io = params[:stream][:user_id]
+    File.open(Rails.root.join('public', 'uploads', uploaded_io.original_filename), 'w') do |file|
+      file.write(uploaded_io.read)
+    end
+  end
+
   private
 
     def xcoder_params
