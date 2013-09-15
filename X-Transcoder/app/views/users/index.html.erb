@@ -1,0 +1,11 @@
+<% provide(:title, 'All X-Transcoder Users') %>
+<h1>All users</h1>
+
+<ul class="users">
+  <% @users.each do |user| %>
+      <li>
+       <br> <%= gravatar_for user %>
+       <br> <%= link_to user.name, user %>
+      </li>
+  <% end %>
+</ul>

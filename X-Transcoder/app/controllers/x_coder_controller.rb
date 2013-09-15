@@ -17,6 +17,10 @@ class XCoderController < ApplicationController
   	end
   end
 
+  def index
+    @x_coders = current_user.x_coders
+  end
+
   def destroy
   end
 
