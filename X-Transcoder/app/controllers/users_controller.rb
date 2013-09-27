@@ -56,13 +56,6 @@ class UsersController < ApplicationController
                                    :password_confirmation)
     end
 
-     #before filter
-     def signed_in_user
-       unless signed_in?
-         store_location
-         redirect_to signin_url, notice: "Please sign in."
-        end
-     end
 
      def correct_user
        @user = User.find(params[:id])

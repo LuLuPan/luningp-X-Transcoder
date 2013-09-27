@@ -3,17 +3,8 @@
   <%= current_user.name %>
 </h1>
 <span>
-  <%= link_to "view my profile", current_user %>
+  <%= link_to "Show my tasks", current_user %>
 </span>
 <span>
   <%= pluralize(current_user.x_coders.count, "x_transcoding task") %>
 </span>
-
-<h1>
- <font size="5" color="blue">
-  <br>Stream Information:
-  <br>Video Container: AVI
-  <br>Codec Format: H.264 MP
-  <br>Bitrate: 30 fps
-</font>
-</h1>

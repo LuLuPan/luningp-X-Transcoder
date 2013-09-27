@@ -1,10 +1,7 @@
-class XCoderController < ApplicationController
-  before_action :signed_in_user
+class XCodersController < ApplicationController
+  before_filter :signed_in_user, only: [:create, :destroy]
   def new
   	@xcoder = XCoder.new
-  end
-
-  def index
   end
 
   def create
@@ -13,7 +10,7 @@ class XCoderController < ApplicationController
   		flash[:success] = "Xcoder created!"
   		redirect_to root_url
   	else
-  		render 'static_pages/home'
+  		render 'new'
   	end
   end
 
