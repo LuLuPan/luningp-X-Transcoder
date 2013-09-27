@@ -6,6 +6,11 @@ XTranscoder::Application.routes.draw do
   resources :sessions, only: [:new, :create, :destroy]
   resources :x_coder, only: [:create, :destroy]
 
+  #REST API namespace
+  namespace :api do
+    resources :users, :defaults => { :format => 'xml' }
+  end
+
   root :to => 'static_pages#home'
   match '/signup',  to: 'users#new',            via: 'get'
   match '/signin',  to: 'sessions#new',         via: 'get'

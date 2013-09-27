@@ -3,7 +3,7 @@
   <%= current_user.name %>
 </h1>
 <span>
-  <%= link_to "Show my tasks", current_user %>
+  <%= link_to "Show my tasks", current_user, :remote => true %>
 </span>
 <span>
   <%= pluralize(current_user.x_coders.count, "x_transcoding task") %>

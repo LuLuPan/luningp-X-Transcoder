@@ -3,7 +3,7 @@
 
 <div class="row">
   <div class="span6 offset3">
-    <%= form_for(@xcoder) do |f| %>
+    <%= form_for(@xcoder, :remote => true) do |f| %>
 
       <%= f.label :stream %>
       <br><%= f.text_field :stream %>

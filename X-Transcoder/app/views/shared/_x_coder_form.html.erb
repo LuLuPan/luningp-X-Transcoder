@@ -1,6 +1,6 @@
 
 
-<%= form_for(@xcoder) do |f| %> 
+<%= form_for(@xcoder, :remote => true) do |f| %>
   <div class="field">
     <%= f.file_field :stream, placeholder: "Submit new Transcoding Stream..." %>
   </div>
