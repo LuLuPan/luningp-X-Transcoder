@@ -6,12 +6,16 @@ class XCodersController < ApplicationController
 
   def create
   	@xcoder = current_user.x_coders.build(xcoder_params)
+    respond_to do |format|
   	if @xcoder.save
   		flash[:success] = "Xcoder created!"
-  		redirect_to root_url
+      format.html {redirect_to root_url}
+      format.js {}
+
   	else
-  		render 'new'
-  	end
+      format.js {render 'new'}
+    end
+      end
   end
 
   def index

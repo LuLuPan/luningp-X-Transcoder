@@ -22,10 +22,20 @@ class UsersController < ApplicationController
   def show
     @user = User.find(params[:id])
     @x_coders = @user.x_coders.paginate(page: params[:page])
+    respond_to do |format|
+      format.html {  }
+      format.json { render json:@user }
+      format.xml { render xml: @user }
+    end
   end
 
   def index
     @users = User.all
+    respond_to do |format|
+      format.html {  }
+      format.json { render json:@users }
+      format.xml { render xml: @users }
+    end
 
   end
 

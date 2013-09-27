@@ -11,7 +11,7 @@
       <br><%= f.label :format %>
       <br><%= f.text_field :format %>
 
-        <br><%= f.submit "Submit", class: "btn btn-large btn-primary" %>
+        <br><%= f.submit "Submit", :onclick => "return confirm('your message here')" %>
 
     <% end %>
   </div>

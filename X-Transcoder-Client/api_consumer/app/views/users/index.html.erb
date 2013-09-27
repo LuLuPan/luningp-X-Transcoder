@@ -1,0 +1,24 @@
+<%= link_to "X-Coders", users_path %>
+<%if !@users.present? %>
+  <p>Below is the list of X-Coder users</p>
+  <table width="100%">
+    <tr>
+      <td>user_name</td>
+      <td>email</td>
+    </tr>
+    <%#@users.each do |u|%>
+    <tr>
+      <td>hehe</td>
+      <td>hehe@hehe.com</td></tr>
+	  <tr><td>hoho</td>
+      <td>hoho@hoho.com</td></tr>
+	  <tr><td>haha</td>
+      <td>haha@haha.com</td></tr>
+	  <tr><td>xixi</td>
+      <td>xixi@xixi.com</td></tr>
+    </tr>
+   <%#end%>
+  </table>
+<%else%>
+  <p>No User is Found</p>
+<%end%>
